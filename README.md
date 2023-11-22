@@ -1,8 +1,7 @@
-# Patimetria
-En patimetria se encuentra el codigo utilizado para este proyecto, la manera en que se carga el dataset y se importa ciertos modulos
-debe ser adaptada a cada equipo.
+# Repositorio Proyecto Humedales
+Aquí colocaremos los archivos que utilizamos para el desarrollo de el proyecto de Integrando Humedales
 # Train
-Este es el dataset utilizado.
+Este es el dataset utilizado, aquí esta el data set generico de distintas especies de aves y las fotos enviadas por Integrando Humedales
 # Modulos:
-Los modulos Losses.py, Network.py, Trainer.py y datasets.py son archivos adapatados a este proyecto. los modulos originales se encuentran en el siguiento github: https://github.com/adambielski/siamese-triplet
+Los modulos Losses.py, Network.py, Trainer.py y datasets.py son archivos adapatados a este proyecto y uno de años anteriores. Los modulos originales se encuentran en el siguiento github: https://github.com/adambielski/siamese-triplet
 El modulo duckies_dataset es un modulo creado especificamente para este proyecto.
