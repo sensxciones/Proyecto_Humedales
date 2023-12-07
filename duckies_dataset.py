@@ -61,11 +61,11 @@ class DuckieDataset(Dataset):
       self.data = list()
       self.targets = list()
       
-      p = int(len(patos)*0.8)
-      if self.train:
-        patos = patos[:p]
-      else:
-        patos = patos[p:]
+      #p = int(len(patos)*0.8)
+      #if self.train:
+        #patos = patos[:p]
+      #else:
+        #patos = patos[p:]
         
       for cl in patos:
           for img in os.listdir(root + '/' + cl):
