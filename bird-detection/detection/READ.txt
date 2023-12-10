@@ -1,3 +1,0 @@
-esta carpeta va a almacenar la recopilacion de detecciones realizadas por
-por la camara
-Los titulos indican año mes y fecha de la grabacion
