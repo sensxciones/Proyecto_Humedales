@@ -26,8 +26,9 @@ ruta_archivo = os.path.join(carpeta_destino, nombre_archivo)
 
 # se importa el modelo de YOLO, con algunos de los pesos. Ahora este esta
 #entrenado para la deteccion de aves
-path_to_best = "/models/best.pt"
-model = YOLO(path_to_best)
+
+path_to_model = str(os.getcwd()) + "/models/best.pt"
+model = YOLO(path_to_model)
 
 # esta funcion abre un archivo de texto para escribir sobre el.
 archivo_detecciones = open(ruta_archivo, "w")
