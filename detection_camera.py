@@ -26,7 +26,7 @@ ruta_archivo = os.path.join(carpeta_destino, nombre_archivo)
 
 # se importa el modelo de YOLO, con algunos de los pesos. Ahora este esta
 #entrenado para la deteccion de aves
-
+#la funcion os sirve para no tener que cambair el directorio cada vez que se coloca en otro dispositivo
 path_to_model = str(os.getcwd()) + "/models/best.pt"
 model = YOLO(path_to_model)
 
