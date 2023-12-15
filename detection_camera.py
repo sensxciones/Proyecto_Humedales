@@ -26,8 +26,7 @@ ruta_archivo = os.path.join(carpeta_destino, nombre_archivo)
 
 # se importa el modelo de YOLO, con algunos de los pesos. Ahora este esta
 #entrenado para la deteccion de aves
-#la funcion os sirve para no tener que cambair el directorio cada vez que se coloca en otro dispositivo
-path_to_model = str(os.getcwd()) + "/models/bird-training/weights/best.pt"
+path_to_model = str(os.getcwd()) + "/models/yolov8n.pt"
 model = YOLO(path_to_model)
 
 # esta funcion abre un archivo de texto para escribir sobre el.
@@ -35,11 +34,12 @@ archivo_detecciones = open(ruta_archivo, "w")
 
 while True:
     success, img = cap.read()
-    results = model(img, stream=True) #a diferencia de otros scripts
-#no hay que imponer la clase de pajaros ya que esta entrenado para reconocer
-#pajaros como unica clase
+    results = model(img, classes = 14, stream=True)
     for bird in results:
         boxes = bird.boxes
+	#IMPORTANTE: espacio para tomar el recorte de la foto, pasarlo
+	#al modelo entrenado del humedal, y que solo nos devuelva la
+	#especie de pajaro identificada
         for box in boxes:
             n = n+1
             # se encierra la ave detectada en la webcam en un cuadrado
@@ -66,8 +66,7 @@ while True:
             info_deteccion = f"en el segundo {timestamp} - Ave detectada con {grado_confianza}% de confianza.\n"
             archivo_detecciones.write(info_deteccion)
 
-#la siguiente linea indica que, si se apreta la letra q, se rompe el ciclo
-#de arriba, se libera la camara y se apaga
+#Al apretar la letra q, se rompe el ciclo, se libera la camara y se apaga
     cv2.imshow('Webcam', img)
     if cv2.waitKey(1) == ord('q'):
         break
