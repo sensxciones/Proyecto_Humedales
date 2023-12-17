@@ -102,9 +102,7 @@ while True:
     results = model(img, classes = 14, stream=True, verbose=False)
     for bird in results:
         boxes = bird.boxes
-	#IMPORTANTE: espacio para tomar el recorte de la foto, pasarlo
-	#al modelo entrenado del humedal, y que solo nos devuelva la
-	#especie de pajaro identificada
+	#a
         for box in boxes:
             n = n+1
             # se encierra la ave detectada en la webcam en un cuadrado
