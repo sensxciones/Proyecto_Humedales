@@ -121,7 +121,7 @@ while True:
             # label = "LOICA"
 
             # se imprime el cuadrado en la camara
-            cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
+            cv2.rectangle(img, (x1, y1), (x2, y2), (12, 183, 242), 3)
 
             # se imprime el porcentaje de confianza en la deteccion
             grado_confianza = math.ceil((box.conf[0]*100))
@@ -130,7 +130,7 @@ while True:
             # Detalle de los objetos, el color del texto, el tipo de letra
 		#el grososr del txt
             org = [x1, y1 - 10]
-            color = (0, 0, 255)
+            color = (12, 183, 242)
             thickness = 2
             font_type = cv2.FONT_HERSHEY_PLAIN
             cv2.putText(img, str(label), org, font_type, 1, color, thickness)
