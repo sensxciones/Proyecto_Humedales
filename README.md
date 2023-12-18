@@ -23,6 +23,7 @@ El modulo duckies_dataset es un modulo creado especificamente para este proyecto
 Por otro lado, el módulo detection_camera.py fue desarrollado por nosotros, este realiza un reconocimiento a tiempo real de las aves, integrando nuestra red neuronal con las detecciones de YOLO. 
 
 Por otro lado, una de las tareas que implementa nuestro proyecto es escribir un archivo de texto mencionando las detecciones realizadas y una estimación del tiempo en el que se realizo.
-# Patimetria_2
-Aquí se encuentra el archivo Jupyter adpatado para nuestro proyecto.
-Durante el proyecto, primero utilizamos un dataset publico de la plataforma <a href="https://docs.ultralytics.com/">Kaggle</a> con el cual entrenamos este modelo para aumentar la precisión de su funcionamiento. 
+# Patimetria_2 y Embedding-aves-humedal
+Aquí se encuentra el archivo Jupyter adpatado para nuestro proyecto, junto con el archivo que nos permite generar los embeddings de las aves de humedal y guardarlos en tuplas con su nombre. El primer archivo nos genera un modelo para la clasificación de aves como tal, mientras que el segundo nos genera un archivo especifico para las especies de aves presentes en el humedal.
+
+Durante el proyecto, primero utilizamos un dataset publico de la plataforma <a href="https://docs.ultralytics.com/">Kaggle</a> con el cual entrenamos este modelo para aumentar la precisión de su funcionamiento. Más adeltante utilizamos el repositorio de imagenes de Reintegrando Humedales.
