@@ -6,13 +6,11 @@ pip install ultralytics
 ```bash
 pip install opencv-python
 ```
-```bash
-pip install "pytorch"
-```
 Una vez instalados, dentro de la carpeta en la que quieran almacenar el repositorio, es necesario ejecutar la siguiente línea de código, 
 ```bash
 git clone https://github.com/sensxciones/Proyecto_Humedales
 ```
+Una vez realizado, sera posible acceder desde tu dispositivo a los archivos del proyecto, e incluisve modificarlos para adaptarlos a tus propios proyectos.
 # Ultralytics
 Para entender mejor el funcionamiento de YOLO, se tiene la siguiente documentación (<aYOLO href="https://docs.ultralytics.com/">Docs</a>), donde se muestran detalles acerca de como entrenar la detección de YOLO, además de utilizar otras funciones de este, como Pose Estimation o Segmentation.
 
