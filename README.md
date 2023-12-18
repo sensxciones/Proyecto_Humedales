@@ -18,8 +18,10 @@ Para entender mejor el funcionamiento de YOLO, se tiene la siguiente documentaci
 
 # Modulos:
 Los modulos Losses.py, Network.py, Trainer.py y datasets.py son archivos adapatados para un proyecto de años anteriores. Los modulos originales se encuentran en el siguiento github: https://github.com/adambielski/siamese-triplet
-El modulo duckies_dataset es un modulo creado especificamente para este proyecto.
+El modulo duckies_dataset es un modulo creado especificamente para este proyecto. 
+
 Por otro lado, el módulo detection_camera.py fue desarrollado por nosotros, este realiza un reconocimiento a tiempo real de las aves, integrando nuestra red neuronal con las detecciones de YOLO. 
+
 Por otro lado, una de las tareas que implementa nuestro proyecto es escribir un archivo de texto mencionando las detecciones realizadas y una estimación del tiempo en el que se realizo.
 # Patimetria_2
 Aquí se encuentra el archivo Jupyter adpatado para nuestro proyecto.
