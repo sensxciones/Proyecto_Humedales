@@ -1,8 +1,14 @@
 # Repositorio Proyecto Humedales
 Aquí colocaremos los archivos que utilizamos para el desarrollo de el proyecto de Integrando Humedales.
 
-Para hacer uso del repositorio es necesario clonar el repositorio de ultralytics de v8, para ello solo basta con ejecutar "pip install ultralytics" en el terminal, o bien, ejecutar "git clone+https://github.com/ultralytics/ultralytics.git"
-Tambien es necesario contar con OpenCV.
+Para hacer uso del repositorio es necesario clonar el repositorio de ultralytics de v8, para ello solo basta con ejecutar: 
+```bash
+pip install ultralytics
+```
+```bash
+pip install opencv-python3
+```
+
 # Train
 Este es el dataset utilizado, aquí esta el data set generico de distintas especies de aves y las fotos enviadas por Integrando Humedales (hay que descargar y colocarlas en un archivo zip)
   Set de aves en general: --
