@@ -17,4 +17,4 @@ En primer lugar, en la carpeta models hay archivos necesarios para la ejecución
 
 # Patimetria_2
 Aquí se encuentra el archivo Jupyter para entrenar nuestro proyecto.
-Durante el proyecto, primero utilizamos un dataset publico de la plataforma Kaggle(ver link) con el cual entrenamos este modelo para aumentar la precisión de su funcionamiento. Más adelante, utilizamos los archivo enviados por la organizacion "Integrando Humedales" (las fotos se encuentran en la carpeta dataset-humedal).
+Durante el proyecto, primero utilizamos un dataset publico de la plataforma Kaggle(https://www.kaggle.com/datasets/gpiosenka/100-bird-species), con el cual entrenamos este modelo para aumentar la precisión de su funcionamiento. Más adelante, utilizamos los archivo enviados por la organizacion "Integrando Humedales" (las fotos se encuentran en la carpeta dataset-humedal).
